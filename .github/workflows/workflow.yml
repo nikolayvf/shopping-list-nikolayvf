@@ -12,6 +12,7 @@ on:
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
+    needs: build_and_run
 
     steps:
       - uses: actions/checkout@v3
