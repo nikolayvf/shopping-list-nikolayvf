@@ -36,6 +36,7 @@ jobs:
           wait_deploy: true
   ui_test:
     needs: deploy
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 20.x
